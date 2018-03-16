@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 
-name="znc-1.6.5"
+name="znc-1.6.6"
 cd /usr/local/src
 wget https://znc.in/releases/$name.tar.gz
 tar -xvzf $name.tar.gz
