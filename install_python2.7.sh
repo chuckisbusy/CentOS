@@ -1,6 +1,8 @@
 #!/bin/sh
 # Install Python 2.7.14:
 #
+# Reference
+# https://danieleriksson.net/2017/02/08/how-to-install-latest-python-on-centos/
 
 yum install openssl openssl-devel zlib zlib-devel -y
 cd /opt

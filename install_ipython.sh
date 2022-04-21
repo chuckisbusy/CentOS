@@ -1,8 +1,7 @@
 #!/bin/sh
 #
-yum install python3 python3-pip -y
-python3 -m pip install --upgrade --no-deps --force-reinstall ipykernel jupyterhub notebook
-python3 -m ipykernel install
-python27 -m pip install --upgrade --no-deps --force-reinstall ipykernel
+pip3 install --upgrade --force-reinstall ipykernel ipywidgets jupyterhub notebook traitlets tornado jinja2 jupyter-client jupyter-core nbconvert nbformat tornado jinja2 tornado jupyter-client tornado --no-cache-dir
+python36 -m ipykernel install
+python27 /usr/bin/pip27 install --upgrade --force-reinstall ipykernel traitlets jupyter-client tornado jupyter-core futures path.py --no-cache-dir
 python27 -m ipykernel install
-jupyter nbextension enable --py --sys-prefix widgetsnbextension
+/usr/local/bin/jupyter nbextension enable --py --sys-prefix widgetsnbextension
